@@ -136,6 +136,10 @@ st.subheader("✅ Final Resume JSON")
 final_resume = resume_data.copy() if resume_data else {}
 final_resume.update(accepted)
 
+# Merge intake into final output
+if intake_data:
+    final_resume["intake"] = intake_data
+
 st.json(final_resume)
 
 # Download button
