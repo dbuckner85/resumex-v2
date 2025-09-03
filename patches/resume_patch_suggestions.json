@@ -1,0 +1,30 @@
+[
+  {
+    "field": "summary",
+    "original_value": "Visionary product strategist and systems thinker blending deep AI architecture with narrative design. Experienced across fintech, healthcare, consulting, and creative technology sectors. Looking to lead product or architectural efforts at high-impact companies building for the future.",
+    "suggested_value": "Senior AI product strategist with 10+ years\u2019 experience scaling architectures across fintech, healthcare, and technology consulting.",
+    "reason": "Condenses summary and aligns phrasing with recruiter/ATS keywords.",
+    "confidence_score": 0.91
+  },
+  {
+    "field": "skills",
+    "original_value": [
+      "Agile Product Ownership",
+      "Narrative Architecture",
+      "UX/UI Design",
+      "Adobe Analytics",
+      "Storytelling in Tech",
+      "Cross-functional Leadership"
+    ],
+    "suggested_value": [
+      "Agile Product Ownership",
+      "AI Product Strategy",
+      "Enterprise UX/UI Design",
+      "Adobe Experience Cloud",
+      "Technical Storytelling",
+      "Cross-Functional Leadership"
+    ],
+    "reason": "Rephrases skills to better match ATS keyword libraries.",
+    "confidence_score": 0.86
+  }
+]

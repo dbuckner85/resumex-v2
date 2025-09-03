@@ -1,0 +1,34 @@
+{
+  "expected_fields": [
+    {
+      "field": "title",
+      "description": "Job title",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "summary",
+      "description": "Professional summary statement",
+      "type": "string",
+      "required": true
+    },
+    {
+      "field": "experience",
+      "description": "Work experience entries",
+      "type": "list",
+      "required": true
+    },
+    {
+      "field": "skills",
+      "description": "Key professional skills",
+      "type": "list",
+      "required": true
+    },
+    {
+      "field": "industries",
+      "description": "Industries of experience",
+      "type": "list",
+      "required": false
+    }
+  ]
+}

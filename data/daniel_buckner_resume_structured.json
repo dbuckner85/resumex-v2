@@ -1,0 +1,53 @@
+{
+  "name": "Daniel Buckner",
+  "title": "Chief Architect / Senior Product Manager",
+  "contact": {
+    "email": "danielbuckner@email.com",
+    "location": "New York, NY"
+  },
+  "summary": "Visionary product strategist and systems thinker blending deep AI architecture with narrative design. Experienced across fintech, healthcare, consulting, and creative technology sectors. Looking to lead product or architectural efforts at high-impact companies building for the future.",
+  "experience": [
+    {
+      "company": "Walgreens Boots Alliance",
+      "title": "Senior Product Manager | Agile Lead (Consultant)",
+      "location": "New York, NY",
+      "dates": "Jan 2022 \u2013 May 2023",
+      "highlights": [
+        "Owned roadmap for in-store pharmacy system replacement across multiple teams.",
+        "Redesigned UX/UI for pharmacy operations improving employee workflows.",
+        "Created dashboards in Adobe Workspace to monitor user engagement.",
+        "Drove 15% increase in engagement via behavioral data analysis.",
+        "Facilitated SAFe Agile planning, backlog grooming, and retrospectives."
+      ]
+    },
+    {
+      "company": "Cognizant / Microsoft",
+      "title": "Adobe Technical Consultant",
+      "location": "Remote",
+      "dates": "May 2023 \u2013 Present",
+      "highlights": [
+        "Managed Adobe Experience Platform implementations for enterprise clients.",
+        "Configured custom segments and streaming destinations across cloud pipelines.",
+        "Translated marketing strategy into technical architecture design documents."
+      ]
+    }
+  ],
+  "skills": [
+    "Agile Product Ownership",
+    "Narrative Architecture",
+    "UX/UI Design",
+    "Adobe Analytics",
+    "Storytelling in Tech",
+    "Cross-functional Leadership"
+  ],
+  "industries": [
+    "Financial Technology",
+    "Healthcare",
+    "Management Consulting",
+    "Software Development",
+    "Creative Technology",
+    "Aerospace"
+  ],
+  "willing_to_continue_industries": true,
+  "open_to_new_industries": true
+}

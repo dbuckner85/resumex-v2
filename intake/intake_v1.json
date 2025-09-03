@@ -1,0 +1,21 @@
+{
+  "user_name": "Daniel Buckner",
+  "career_stage": "Senior",
+  "target_roles": [
+    "AI Architect",
+    "Chief Product Officer",
+    "Senior Product Manager"
+  ],
+  "industries_experience": [
+    "Financial Technology",
+    "Healthcare",
+    "Management Consulting",
+    "Software Development",
+    "Creative Technology",
+    "Aerospace"
+  ],
+  "industries_open_to": true,
+  "location_preference": "Remote or Hybrid",
+  "relocation_open": true,
+  "additional_notes": "Focus on AI-integrated platforms, resume tailoring for ATS, and narrative alignment."
+}
