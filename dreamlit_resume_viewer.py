@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from pathlib import Path
+import statistics
 
 st.set_page_config(page_title="✨ Dreamlit Resume Patch Viewer", layout="wide")
 st.title("✨ Dreamlit Resume Patch Viewer")
@@ -29,7 +30,7 @@ def save_json(path, data):
         st.error(f"⚠️ Could not save {path.name}: {e}")
         return False
 
-# Load default data
+# Load data
 patch_data = load_json(PATCH_FILE)
 resume_data = load_json(RESUME_FILE)
 intake_data = load_json(INTAKE_FILE) or {}
@@ -98,6 +99,7 @@ if not patch_data:
     st.stop()
 
 accepted = {}
+accepted_confidences = []
 st.subheader("📌 Suggested Resume Patches")
 
 # "Apply all" toggle
@@ -127,18 +129,31 @@ for idx, patch in enumerate(patch_data):
             )
 
         if decision == "Accept suggestion":
-            accepted[field] = suggested
+            accepted[field] = {
+                "value": suggested,
+                "confidence_score": confidence,
+                "reason": reason
+            }
+            accepted_confidences.append(confidence)
 
 # Merge results
 st.markdown("---")
 st.subheader("✅ Final Resume JSON")
 
 final_resume = resume_data.copy() if resume_data else {}
-final_resume.update(accepted)
+
+# If user accepts suggestions, integrate them
+for field, details in accepted.items():
+    final_resume[field] = details
 
 # Merge intake into final output
 if intake_data:
     final_resume["intake"] = intake_data
+
+# Show average confidence if available
+if accepted_confidences:
+    avg_conf = statistics.mean(accepted_confidences)
+    st.sidebar.markdown(f"**📊 Avg Confidence:** {avg_conf:.2f}")
 
 st.json(final_resume)
 
